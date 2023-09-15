@@ -10,7 +10,26 @@ submitBtn.onclick = function () {
   const productName = document.getElementById("productName");
   const productPrice = document.getElementById("productPrice");
   const productQTY = document.getElementById("productQTY");
-    
+      if (customerNameEle.value == "") {
+    alert("please Enter customer Name");
+    return;
+  }
+  if (customerNumberEle.value == "") {
+    alert("please Enter customer number");
+    return;
+  }
+  if (productName.value == "") {
+    alert("please Enter product name");
+    return;
+  }
+  if (productPrice.value == "") {
+    alert("please Enter the product price");
+    return;
+  }
+  if (productQTY.value == "") {
+    alert("please Enter the quantity");
+    return;
+  }
   let currentSum = productPrice.value * productQTY.value;
   sum += currentSum;
 
