@@ -1,0 +1,39 @@
+
+body {
+    background: none;
+    background-color: #fff;
+}
+
+#holder-section {
+    background: #fff;
+}
+
+#main-section {
+    width: 100%;
+    box-shadow: none;
+}
+
+input[type='text'],
+input[type='number'] {
+    border: none;
+    box-shadow: none;
+    background: #fff;
+}
+
+.btn {
+    display: none;
+}
+
+#result-table thead {
+    background: #eee;
+    color: #333;
+}
+
+tfoot {
+    background: #eee;
+    color: #111;
+}
+
+.disp-none-print{
+    display: none;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Session-31-Project-4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/main.css" />
+    <link rel="stylesheet" media="print" href="src/print.css" />
+  </head>
+
+  <body>
+    <section id="holder-section">
+      <section id="main-section">
+        <form>
+          <table>
+            <tr>
+              <td class="title">نام مشتری :</td>
+              <td class="content">
+                <input id="customerName" type="text" name="customerName" />
+              </td>
+            </tr>
+            <tr>
+              <td class="title">شماره موبایل :</td>
+              <td class="content">
+                <input
+                  id="customerNumber"
+                  type="number"
+                  name="customerNumber"
+                />
+              </td>
+            </tr>
+          </table>
+          <table class="disp-none-print">
+            <tr>
+              <td colspan="2">
+                <br />
+                <hr />
+                <br />
+              </td>
+            </tr>
+            <tr>
+              <td class="title">نام محصول</td>
+              <td class="content">
+                <input id="productName" type="text" name="productName" />
+              </td>
+            </tr>
+            <tr>
+              <td class="title">فی محصول</td>
+              <td class="content">
+                <input id="productPrice" type="number" name="productPrice" />
+                <br />
+              </td>
+            </tr>
+            <tr>
+              <td class="title">تعداد</td>
+              <td class="content">
+                <input id="productQTY" type="number" name="productQTY" />
+                <br />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input id="submit-btn" type="button" class="btn" value="ثبت" />
+              </td>
+            </tr>
+          </table>
+        </form>
+        <br />
+        <hr />
+        <br />
+
+        <table id="result-table">
+          <thead>
+            <tr>
+              <th>محصول</th>
+              <th>قیمت</th>
+              <th>تعداد</th>
+              <th>مجموع</th>
+            </tr>
+          </thead>
+          <tbody id="result-body"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">
+                <div id="sum"></div>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+        <br />
+        <input id="print-btn" type="button" class="btn" value="چاپ فاکنور" />
+        <br />
+        <br />
+      </section>
+    </section>
+    <script src="src/main.js"></script>
+  </body>
+</html>

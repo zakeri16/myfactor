@@ -1,0 +1,107 @@
+@font-face {
+  font-family: yekan;
+  src: url("fonst/Yekan.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: yekan;
+}
+
+body {
+  background-color: #eee;
+  direction: rtl;
+  background: url("img/bg.jpg");
+  background-size: 100%;
+}
+
+#holder-section {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#main-section {
+  width: 700px;
+  min-height: 300px;
+  margin: 20px auto;
+  box-shadow: 1px 1px 6px 6px #aaa;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 25px;
+}
+
+table {
+  width: 100%;
+}
+
+table .title {
+  width: 20%;
+}
+
+table .content {
+  width: 80%;
+}
+
+table input[type="text"],
+input[type="number"] {
+  margin: 10px auto;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  border-radius: 3px;
+  padding: 3px;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 1px 1px #eee;
+}
+
+.btn {
+  background-color: #3676df;
+  padding: 5px 25px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  float: left;
+  border-bottom: 6px solid #305a9c;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-bottom: none;
+  margin-top: 6px;
+}
+
+#result-table thead {
+  background: #3676df;
+  color: #fff;
+}
+
+#result-table tr td {
+  text-align: center;
+  padding: 3px;
+}
+
+#result-table tr:nth-child(2n) {
+  background: #eee;
+}
+
+tfoot {
+  background-color: #3676df;
+  color: #fff;
+}
+tfoot #sum {
+  text-align: right;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 740px) {
+  #main-section {
+    width: 80%;
+  }
+}
