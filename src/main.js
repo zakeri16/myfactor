@@ -10,11 +10,10 @@ submitBtn.onclick = function () {
   const productName = document.getElementById("productName");
   const productPrice = document.getElementById("productPrice");
   const productQTY = document.getElementById("productQTY");
-  /*const newTR = document.createElement("tr");
-        const tdProductName = document.createElement("td");
-        tdProductName.innerText = productName;
-        newTR.appendChild(tdProductName);
-        resultEle.appendChild(newTR);*/
+    if (customerName =""){
+alert ="لطفا نام مشتری را وارد کنید";
+returen;
+};
   let currentSum = productPrice.value * productQTY.value;
   sum += currentSum;
 
